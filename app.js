@@ -20,10 +20,12 @@ submitBtn.addEventListener('click', () => {
 function showCorrectImage() {
     const result = isEven(Number(userInput.value));
     if (result === 0) {
+        oddPic.classList.remove('show-pictures');
         evenPic.classList.add('show-pictures');
         return evenPic;
         
     } else {
+        evenPic.classList.remove('show-pictures');
         oddPic.classList.add('show-pictures');
         return oddPic;
     }
