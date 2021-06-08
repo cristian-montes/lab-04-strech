@@ -3,13 +3,22 @@ import { isEven } from './is-even.js';
 // reference needed DOM elements
 const userInput = document.getElementById('user-input');
 const submitBtn = document.getElementById('submit-btn');
+const clearBtn = document.getElementById('clear-btn');
 const oddPic = document.getElementById('odd-pic');
 const evenPic = document.getElementById('even-pic');
 
 
-// set event listeners 
+// Submit Button event listener
 submitBtn.addEventListener('click', () => {
     return showCorrectImage();
+    
+});
+
+// Clear Button event Listener
+clearBtn.addEventListener('click', () =>{
+    userInput.value = '';
+    evenPic.classList.remove('show-pictures');
+    oddPic.classList.remove('show-pictures');
 });
 
   // get user input(s)
