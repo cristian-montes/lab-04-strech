@@ -11,7 +11,7 @@ test('get an even number', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = isEven(2) // use your function here
+    const actual = isEven(2);// use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
